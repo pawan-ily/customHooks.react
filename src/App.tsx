@@ -1,26 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Status from './screens/Status'
+import Qw from './Disabling/Qw';
+import Savebutts from './CustomHooks.tsx/Savebutts';
+import Stats from './CustomHooks.tsx/Stats';
+import Form from './useFormat.tsx/Forms';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Status/>
+    <Qw/>
+    <Stats/>
+    <Savebutts/>
+  <Form/>
+    </>
+  )
+    
 }
 
 export default App;
